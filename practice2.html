@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            display: inline-block;
+            border: 1px solid #333;
+            padding: 20px 40px;
+            margin-left: 50px;
+        }
+        .desc{
+            display: inline-block;
+            padding-bottom: 15px;
+            border-bottom : 2px solid #ccc;
+        }
+        b {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .f-wrap {
+            margin-bottom: 20px;
+        }
+        .inner-wrap {
+            margin-left: 40px;
+        }
+        .motive label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        textarea {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>프론트앤드 개발자 지원서</h1>
+        <div class="desc">
+            HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
+        </div>
+            
+        <form action="#">
+            <div class="f-wrap">
+                <b>개인정보</b>
+                <div class="inner-wrap">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="공백없이 입력하세요.">
+                </div>
+                <div class="inner-wrap">
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone">
+                </div>
+    
+            </div>
+            <div class="f-wrap">
+                <b>지원 분야</b>
+                <div>
+                    <div class="inner-wrap">
+                        <input type="radio" name="area" id="publishing">
+                        <label for="publishing">웹퍼블리싱</label>
+                    </div>
+                    <div class="inner-wrap">
+                        <input type="radio" name="area" id="frontend">
+                        <label for="frontend">웹 프론트앤드</label>
+                    </div>
+                    <div class="inner-wrap">
+                        <input type="radio" name="area" id="mobile">
+                        <label for="mobile">모바일 앱</label>
+                    </div>
+                </div>
+            </div>
+            <div class="motive">
+                <label for="motive">지원동기</label>
+                <textarea  name="motive" id="motive" cols="70" rows="5"></textarea>
+            </div>
+            <button type="submit">접수하기</button>
+            <button type="reset">다시쓰기</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
