@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "D2Coding", "Nanum Gothic", sans-serif;
+        }
+        .parent {
+            font-size: 16px;
+            font-weight: 100;
+            font-style: oblique;
+            /* 키워드 표기법 */
+            background-color: blanchedalmond;
+        }
+        .child {
+            font-size: 120%;
+            font-weight: 400;
+            background-color: rgb(255,0,0);
+        }
+        .child-to-child {
+            font-size: 120%;
+            font-weight: 900;
+            /* 4번째 값은 투명도를 의미 : 1에 가까우면 불투명 */
+            background-color: rgba(0,0,255,.5);
+        }
+        body > span {
+            display: block;
+            font-variant: small-caps;
+            text-align: center;
+        }
+        .car-name {
+            text-align:center;
+        }
+        a {
+            text-decoration : none;
+        }
+        .text-test {
+            /* 자간 지정 : 글자 사이의 간격 */
+            letter-spacing:0px;
+            /* 줄간 지정 */
+            line-height: 1.4em;
+            font-size: 20px;
+            font-weight: bold;
+            color: royalblue;
+            /* 가로거리, 세로거리, 번짐정도, 색상 */
+            text-shadow: 1px -1px 3px #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>부모의 폰트 크기 입니다.</p>
+        <div class="child">
+            <p>자식의 폰트 크기 입니다.</p>
+            <div class="child-to-child">
+                <p>자식의 자식 폰트 크기 입니다.</p>
+            </div>
+        </div>
+    </div>
+    <h3>hex값으로 색상을 지원 지정합니다.</h3>
+
+    <span>Hello HELLO hello</span>
+
+    <div class="car-name">
+        <span>카이앤</span>
+        <span>파나메라</span>
+        <span>타이칸</span>
+    </div>
+
+    <a href="http://naver.com">네이버</a>
+
+    <p class="text-test">
+        행복의 한 쪽 문이 닫히면 다른 쪽 문이 열린다.
+        그러나 흔히 우리는 닫혀진 문을 오랫동안 보기 때문에
+        우리를 위해 열려 있는 문을 보지 못한다.
+    </p>
+</body>
+</html>
