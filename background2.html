@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+        .parent {
+            width: 620px;
+            border: 1px solid black;
+            overflow: auto;  /* 내용이 설정한 크기보다 큰 경우에 대한 처리 */
+        }
+        .children {
+            height: 1000px;
+            overflow: auto;
+            background-image: url('./images/activity.jpg');
+            background-repeat: no-repeat;
+            background-attachment:scroll; /* 기본값: scroll */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="children"></div>
+    </div>
+</body>
+</html>

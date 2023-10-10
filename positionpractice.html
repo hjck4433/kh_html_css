@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            width: 300px;
+            background-color: royalblue;
+            position: relative;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            border: 4px dashed red;
+            background-color: orange;
+            position: relative;
+        }
+        .box:nth-child(1) {
+            z-index: 1;
+        }
+        .box:nth-child(2) {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
