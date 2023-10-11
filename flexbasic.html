@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex의 주축 방향을 결정 */
+            /* flex-direction: row; */
+            /* 아이템이 컨테이너의 영역을 벗어날 때 어떻게 처리할지 결정 */
+            /* flex-wrap:nowrap; */
+            flex-flow: row wrap;
+            /* 주축에 대한 정렬 방법 */
+            justify-content: space-evenly;
+            /* 교차축에 대한 정렬 방법 */
+            align-items: center;
+            width: 300px;
+            height: 200px;
+            background-color: bisque;
+            border: 1px solid black;
+        }
+        .flex-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 50px;
+            margin: 2px;
+            text-align: center;
+            border: 1px solid darkblue;
+            color: white;
+            background-color: orange;
+        }
+        .flex-item:nth-child(2n) {
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">item1</div>
+        <div class="flex-item">item2</div>
+        <div class="flex-item">item3</div>
+        <div class="flex-item">item4</div>
+        <div class="flex-item">item5</div>
+        <div class="flex-item">item6</div>
+    </div>
+</body>
+</html>
