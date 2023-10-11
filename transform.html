@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 변형(tansfrom) : 회전, 이동, 크기 조절, 기울기 조절 */
+        body {
+            margin: 0;
+            padding: 0;
+            outline: 1px solid red;
+            height: 400px;
+        }
+        div {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: 1s linear;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p {
+            width: 10px;
+            height: 10px;
+            background-color: blue;
+        }
+        div:hover {
+            /* transform: translate(100px,200px); */
+            /* transform: scale(2, 5); */
+            /* transform: skew(-30deg); */
+            /* transform: rotate(45deg);
+            transform-origin: 0 0; */
+            /* transform: rotateX(180deg) rotateY(64deg) translate3d(51px, 30px, 10px); */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>
