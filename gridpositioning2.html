@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 그리드 라인을 이용한 배치 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 100px);
+        }
+        .item {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-icon {
+            background-color: blue;
+            grid-column-start:1;
+            grid-column-end:2;
+        }
+        .grid-header {
+            background-color: orangered;
+            grid-column-start:2;
+            grid-column-end:5;
+        }
+        .grid-sidebar {
+            background-color: aqua;
+            grid-column-start:1;
+            grid-column-end:2;
+            grid-row-start:2;
+            grid-row-end:4;
+        }
+        .grid-content {
+            background-color: orange;
+            grid-column-start:2;
+            grid-column-end:5;
+            grid-row-start:2;
+            grid-row-end:4;
+        }
+        .grid-footer {
+            background-color: palevioletred;
+            grid-column-start:1;
+            grid-column-end:5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item grid-icon">아이콘</div>
+        <div class="item grid-header">헤더 영역 입니다.</div>
+        <div class="item grid-sidebar">사이드바 영역</div>
+        <div class="item grid-content">컨텐츠 영역</div>
+        <div class="item grid-footer">푸터 영역</div>
+    </div>
+</body>
+</html>
